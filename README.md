@@ -41,11 +41,11 @@ Execute o arquivo `index.html`
 ## Layout
 
 <div align="center">
-    <img alt="Desktop" title="#Desktop" src="images/mocks1.png" width="680px" />
+    <img alt="Desktop" title="#Desktop" src="images/mock1.png" width="680px" />
 </div>
 <br/><br/>
 <div align="center">
-    <img alt="Desktop" title="#Desktop" src="images/mocks2.png" width="680px" />
+    <img alt="Desktop" title="#Desktop" src="images/mock2.png" width="680px" />
 </div>
 
 <br/><br/>
