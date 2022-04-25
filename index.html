@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Nunito:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Sidebar menu responsive</title>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="logo-content">
+      <div class="logo">
+        <i class='bx bxl-react'></i>
+        <div class="logo-name">Bruno Castro</div>
+      </div>
+
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links-name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user'></i>
+          <span class="links-name">User</span>
+        </a>
+        <span class="tooltip">User</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat'></i>
+          <span class="links-name">Messages</span>
+        </a>
+        <span class="tooltip">Messages</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links-name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder'></i>
+          <span class="links-name">File manager</span>
+        </a>
+        <span class="tooltip">File manager</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cart'></i>
+          <span class="links-name">Order</span>
+        </a>
+        <span class="tooltip">Order</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="links-name">Saved</span>
+        </a>
+        <span class="tooltip">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links-name">Setting</span>
+        </a>
+        <span class="tooltip">Setting</span>
+      </li>
+    </ul>
+
+    <div class="profile-content">
+      <div class="profile">
+        <div class="profile-details">
+          <img src="./images/profile.jpeg" alt="">
+          <div class="name-job">
+            <div class="name">Bruno Castro</div>
+            <div class="job">Front End</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log-out"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-content">
+    <div class="text">Home content</div>
+  </div>
+
+  <script>
+    const btn = document.querySelector("#btn");
+    const sidebar = document.querySelector(".sidebar");
+    const search = document.querySelector(".bx-search");
+
+    btn.onclick = function () {
+      sidebar.classList.toggle("active");
+    }
+
+    search.onclick = function () {
+      sidebar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>
