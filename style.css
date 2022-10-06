@@ -269,3 +269,7 @@ body {
   left: 240px;
 
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
